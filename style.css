@@ -378,10 +378,10 @@ footer{
     }
     .banner {
         img{
-            height: 250px
+            height: 260px
            }
         h1{
-            font-size: 27px
+            font-size: 28px
         }
         button{
             font-size: 12px;
@@ -423,11 +423,11 @@ footer{
     .sec_4{
         
         img{
-            width: 210px;
+            width: 200px;
         }
         button{
-            width: 100px;
-            font-size: 12px
+            
+            font-size: 11px
         }
     }
 
@@ -442,7 +442,7 @@ footer{
             font-size: 15px;
         }
         img{
-            width: 210px
+            width: 200px
         }
         
     }
@@ -464,7 +464,7 @@ footer{
     }
     .dress{
         img{
-            width: 150px
+            width: 145px
         }
         h2{
             font-size: 15px;
@@ -480,8 +480,9 @@ footer{
             font-size: 16px;
         }
         p{
-            font-size: 14px
+            font-size: 12px
         }
+        border-right:1px solid;
     }
     footer{
         h1{
