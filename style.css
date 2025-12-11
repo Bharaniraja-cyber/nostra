@@ -45,7 +45,30 @@ body{
         text-decoration:underline ;
     }
 }
-
+.sec_navbar_menu{
+    left: -70%;
+    width: 300px;
+    background-color: #1D232C;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    height: 100vh;
+    top: 5;
+    position:absolute;
+    z-index: 20;
+    p{
+        color: white;
+        right: 0;
+        position:absolute;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+}
 .banner{
     position: relative;
     max-width: 100%;
@@ -325,44 +348,83 @@ footer{
         margin-top: 5px;
     }
 }
+.hidden{
+    display: none;
+}
 
-
-@media screen and (max-width: 1200px){
+@media screen and (min-width:301px) and (max-width: 600px){
     body{
         font-size: 16px
     }
+    .popup{
+        p{
+            font-size: 12px;
+        }
+        gap: 20px;
+        button{
+            font-size: 12px;
+        }
+    }
+    
+    .sec_navbar{
+        a{
+            display: none;
+        }
+        i{
+            display: block;
+        }
+    }
+    .hidden{
+        display: block;
+    }
     .banner {
         img{
-            height: 350px
+            height: 250px
            }
         h1{
-            font-size: 55px
+            font-size: 27px
+        }
+        button{
+            font-size: 12px;
         }
     }
     .logo{
         img{
-            width: 50px;
+            width: 30px;
         }
         p{
-            font-size: 22px
+            font-size: 16px
         }
     }
     .section_2{
-        gap: 50px;
+        gap: 30px;
         h2{
-            font-size: 30px
+            font-size: 23px
         }
         p{
-            font-size: 18px
+            font-size: 16px
         }
         br{
             display: none
         }
     }
-
+    .section_3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .sec_3{
+        width: 80%;
+        
+    }
+    .section_4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .sec_4{
+        
         img{
-            width: 250px;
+            width: 220px;
         }
         button{
             width: 100px;
@@ -370,107 +432,78 @@ footer{
         }
     }
 
+    .section5{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
     .sec_5{
         .p_sec5{
             width: 40px;
-            font-size: 14px;
+            font-size: 15px;
         }
         img{
-            width: 200px
+            width: 220px
         }
-        gap: 10px
+        
     }
 
     .section_6{
         h1{
-            font-size: 30px
+            font-size: 20px
+        }
+        h2{
+            font-size: 17px;
+        }
+        button{
+            font-size: 14px;
         }
         img{
-            width: 450px
+            width: 250px
         }
         gap: 20px
     }
     .dress{
         img{
-            width: 250px
+            width: 150px
+        }
+        h2{
+            font-size: 15px;
         }
     }
+    .dress_collection{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
     .filter_sec{
-        
+        h2{
+            font-size: 16px;
+        }
+        p{
+            font-size: 14px
+        }
+    }
+    footer{
+        h1{
+            font-size: 30px;
+        }
         p{
             font-size: 20px
         }
+        .gone{
+            display: none;
+        }
     }
-};
-
-
-
-
-@media screen and (min-width: 600px){
-    body{
-        font-size: 12px
-    }
-    .sec_navbar{
-        display: none;
-    }
-    .banner {
-        img{
-            height: 200px
-           }
+    .section_7{
         h1{
-            font-size: 40px
-        }
-    }
-    .logo{
-        img{
-            width: 25px;
+            font-size: 25px;
         }
         p{
-            font-size: 22px
-        }
-    }
-    .section_2{
-        gap: 50px;
-        h2{
-            font-size: 25px
-        }
-        p{
-            font-size: 18px
-        }
-        br{
-            display: none
-        }
-    }
-
-    .sec_4{
-        img{
-            width: 130px;
+            font-size: 16px;
         }
         button{
-            width: 80px;
-            font-size: 10px
+            font-size: 16px;
         }
     }
-
-    .sec_5{
-        .p_sec5{
-            width: 40px;
-            font-size: 14px;
-        }
-        img{
-            width: 150px
-        }
-        gap: 10px
-    }
-
-    .section_6{
-        h1{
-            font-size: 30px
-        }
-        img{
-            width: 400px
-        }
-        gap: 20px
-    }
-
-};
+}
