@@ -30,6 +30,6 @@ hid.addEventListener("click",function(){
 
 
 menu_cancel.addEventListener("click",function(){
-    menu.style.left = "-80%"
+    menu.style.left = "-100%"
 })
 
