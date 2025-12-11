@@ -17,4 +17,31 @@ search.addEventListener("keyup", function() {
     }
 });
 
+var sorting = document.querySelector(".filter_sec")
+var sort = sorting.querySelectorAll("input")
+
+sort.forEach(function(input){
+    input.addEventListener("click",function(event){
+        var check = event.target.value.toUpperCase()
+
+        if(!event.target.checked){
+            check=""
+        }
+
+        for(var i=0;i<dress.length;i=i+1){
+            var dressname = dress[i].querySelector("h2").textContent.toUpperCase();
+
+            if (dressname.indexOf(check)<0){
+                dress[i].style.display = "none"
+            }
+            else{
+                dress[i].style.display = "block"
+            }
+        }
+    })
+    
+})
+
+
+
 
