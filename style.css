@@ -46,7 +46,7 @@ body{
     }
 }
 .sec_navbar_menu{
-    left: -80%;
+    left: -100%;
     width: 300px;
     transition: all;
     transition-duration: 250ms;
@@ -531,11 +531,8 @@ footer{
     .hidden{
         display: block;
     }
-    .banner {
+    .banner{
         height: 220px;
-        img{
-            height: 220px !important;
-           }
         h1{
             font-size: 25px
         }
