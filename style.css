@@ -531,10 +531,10 @@ footer{
     .hidden{
         display: block;
     }
-    .banner {
+    .banner{
         height: 220px;
         img{
-            height: 220px ;
+            height: 220px;
            }
         h1{
             font-size: 25px
